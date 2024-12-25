@@ -1,2 +1,2 @@
 # gallery-management-
-this is a gallery management system
+this is a gallery management system.
