@@ -73,30 +73,34 @@ public class AGM extends javax.swing.JFrame {
         lgImg = new javax.swing.JLabel();
         mnPanel = new javax.swing.JPanel();
         jTabbedPane2 = new javax.swing.JTabbedPane();
-        mnGallery = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        mntable = new javax.swing.JTable();
+        mnaadmin = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
         mnAboutus = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        mnaadmin = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
-        mnIDtxt = new javax.swing.JTextField();
-        mnNametxt = new javax.swing.JTextField();
-        mnMeduimtxt = new javax.swing.JComboBox<>();
-        mnContacttxt = new javax.swing.JTextField();
-        mnDatetxt = new javax.swing.JTextField();
-        idError = new javax.swing.JLabel();
+        mnGallery = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        mntable = new javax.swing.JTable();
         mnFormattxt = new javax.swing.JComboBox<>();
+        mnDatetxt = new javax.swing.JTextField();
+        mnNametxt = new javax.swing.JTextField();
+        mnStudioAddresstxt = new javax.swing.JTextField();
         mnPricetxt = new javax.swing.JTextField();
         mnSizetxt = new javax.swing.JTextField();
-        mnStudioAddresstxt = new javax.swing.JTextField();
-        nameError = new javax.swing.JLabel();
-        sizeError = new javax.swing.JLabel();
+        mnMeduimtxt = new javax.swing.JComboBox<>();
+        clear = new javax.swing.JButton();
+        mnAddButton = new javax.swing.JButton();
+        mnIDtxt = new javax.swing.JTextField();
+        mnDeleteButton = new javax.swing.JButton();
+        mnUpdateButton = new javax.swing.JButton();
+        mnContacttxt = new javax.swing.JTextField();
         contactError = new javax.swing.JLabel();
+        dateError = new javax.swing.JLabel();
+        nameError = new javax.swing.JLabel();
+        idError = new javax.swing.JLabel();
         addressError = new javax.swing.JLabel();
         priceError = new javax.swing.JLabel();
-        dateError = new javax.swing.JLabel();
+        sizeError = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -106,21 +110,13 @@ public class AGM extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        mnUpdateButton = new javax.swing.JButton();
-        mnDeleteButton = new javax.swing.JButton();
-        mnAddButton = new javax.swing.JButton();
-        clear = new javax.swing.JButton();
         mnHome = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
-        mnHimg = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         mnLogoutButton = new javax.swing.JButton();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
         pnLoaddingscreen = new javax.swing.JPanel();
         scLoaddingscreen = new javax.swing.JProgressBar();
         imgLS = new javax.swing.JLabel();
@@ -190,39 +186,18 @@ public class AGM extends javax.swing.JFrame {
         jTabbedPane2.setMinimumSize(new java.awt.Dimension(1000, 600));
         jTabbedPane2.setPreferredSize(new java.awt.Dimension(1000, 600));
 
-        mnGallery.setMaximumSize(new java.awt.Dimension(1000, 700));
-        mnGallery.setMinimumSize(new java.awt.Dimension(1000, 700));
-        mnGallery.setPreferredSize(new java.awt.Dimension(1000, 700));
+        mnaadmin.setBackground(new java.awt.Color(204, 204, 255));
+        mnaadmin.setMaximumSize(new java.awt.Dimension(1000, 800));
+        mnaadmin.setMinimumSize(new java.awt.Dimension(1000, 800));
+        mnaadmin.setPreferredSize(new java.awt.Dimension(1000, 800));
+        mnaadmin.setLayout(null);
 
-        mntable.setBackground(new java.awt.Color(255, 204, 102));
-        mntable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+        jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.setLayout(null);
+        mnaadmin.add(jPanel1);
+        jPanel1.setBounds(20, 10, 700, 480);
 
-            },
-            new String [] {
-                "ArtID", "Artist Name", "Date", "Meduim", "Contact", "Price", "Studio Address", "Format ", "Size"
-            }
-        ));
-        jScrollPane1.setViewportView(mntable);
-
-        javax.swing.GroupLayout mnGalleryLayout = new javax.swing.GroupLayout(mnGallery);
-        mnGallery.setLayout(mnGalleryLayout);
-        mnGalleryLayout.setHorizontalGroup(
-            mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mnGalleryLayout.createSequentialGroup()
-                .addGap(41, 41, 41)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 891, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(68, Short.MAX_VALUE))
-        );
-        mnGalleryLayout.setVerticalGroup(
-            mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mnGalleryLayout.createSequentialGroup()
-                .addGap(69, 69, 69)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(410, Short.MAX_VALUE))
-        );
-
-        jTabbedPane2.addTab("gallery", mnGallery);
+        jTabbedPane2.addTab("admin", mnaadmin);
 
         mnAboutus.setFocusTraversalPolicyProvider(true);
 
@@ -250,61 +225,23 @@ public class AGM extends javax.swing.JFrame {
 
         jTabbedPane2.addTab("about us", mnAboutus);
 
-        mnaadmin.setBackground(new java.awt.Color(204, 204, 255));
-        mnaadmin.setMaximumSize(new java.awt.Dimension(1000, 800));
-        mnaadmin.setMinimumSize(new java.awt.Dimension(1000, 800));
-        mnaadmin.setPreferredSize(new java.awt.Dimension(1000, 800));
-        mnaadmin.setLayout(null);
+        mnGallery.setBackground(new java.awt.Color(239, 239, 235));
+        mnGallery.setEnabled(false);
+        mnGallery.setMaximumSize(new java.awt.Dimension(1000, 700));
+        mnGallery.setMinimumSize(new java.awt.Dimension(1000, 700));
+        mnGallery.setPreferredSize(new java.awt.Dimension(1000, 700));
 
-        jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.setLayout(null);
+        mntable.setBackground(new java.awt.Color(54, 54, 51));
+        mntable.setForeground(new java.awt.Color(254, 190, 251));
+        mntable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
 
-        mnIDtxt.setBackground(new java.awt.Color(204, 204, 204));
-        mnIDtxt.setBorder(null);
-        mnIDtxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnIDtxtActionPerformed(evt);
+            },
+            new String [] {
+                "ArtID", "Artist Name", "Date", "Meduim", "Contact", "Price", "Studio Address", "Format ", "Size"
             }
-        });
-        jPanel1.add(mnIDtxt);
-        mnIDtxt.setBounds(110, 30, 210, 50);
-
-        mnNametxt.setBorder(null);
-        mnNametxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnNametxtActionPerformed(evt);
-            }
-        });
-        jPanel1.add(mnNametxt);
-        mnNametxt.setBounds(110, 120, 210, 50);
-
-        mnMeduimtxt.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acrylic", "Watercolor", "Oil", "Charcoal" }));
-        mnMeduimtxt.setToolTipText("");
-        mnMeduimtxt.setBorder(null);
-        jPanel1.add(mnMeduimtxt);
-        mnMeduimtxt.setBounds(460, 290, 210, 60);
-
-        mnContacttxt.setText("98");
-        mnContacttxt.setBorder(null);
-        mnContacttxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnContacttxtActionPerformed(evt);
-            }
-        });
-        jPanel1.add(mnContacttxt);
-        mnContacttxt.setBounds(110, 300, 210, 50);
-
-        mnDatetxt.setText("dd/mm/yyyy");
-        mnDatetxt.setBorder(null);
-        mnDatetxt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnDatetxtActionPerformed(evt);
-            }
-        });
-        jPanel1.add(mnDatetxt);
-        mnDatetxt.setBounds(110, 210, 210, 50);
-        jPanel1.add(idError);
-        idError.setBounds(109, 80, 210, 30);
+        ));
+        jScrollPane1.setViewportView(mntable);
 
         mnFormattxt.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Paper", "Cloth", "Glass" }));
         mnFormattxt.setBorder(null);
@@ -313,26 +250,21 @@ public class AGM extends javax.swing.JFrame {
                 mnFormattxtActionPerformed(evt);
             }
         });
-        jPanel1.add(mnFormattxt);
-        mnFormattxt.setBounds(110, 390, 190, 70);
 
-        mnPricetxt.setBorder(null);
-        mnPricetxt.addActionListener(new java.awt.event.ActionListener() {
+        mnDatetxt.setText("dd/mm/yyyy");
+        mnDatetxt.setBorder(null);
+        mnDatetxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnPricetxtActionPerformed(evt);
+                mnDatetxtActionPerformed(evt);
             }
         });
-        jPanel1.add(mnPricetxt);
-        mnPricetxt.setBounds(460, 110, 190, 50);
 
-        mnSizetxt.setBorder(null);
-        mnSizetxt.addActionListener(new java.awt.event.ActionListener() {
+        mnNametxt.setBorder(null);
+        mnNametxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnSizetxtActionPerformed(evt);
+                mnNametxtActionPerformed(evt);
             }
         });
-        jPanel1.add(mnSizetxt);
-        mnSizetxt.setBounds(460, 210, 190, 50);
 
         mnStudioAddresstxt.setBorder(null);
         mnStudioAddresstxt.addActionListener(new java.awt.event.ActionListener() {
@@ -340,86 +272,29 @@ public class AGM extends javax.swing.JFrame {
                 mnStudioAddresstxtActionPerformed(evt);
             }
         });
-        jPanel1.add(mnStudioAddresstxt);
-        mnStudioAddresstxt.setBounds(460, 30, 190, 50);
-        jPanel1.add(nameError);
-        nameError.setBounds(110, 170, 210, 30);
-        jPanel1.add(sizeError);
-        sizeError.setBounds(460, 260, 190, 30);
-        jPanel1.add(contactError);
-        contactError.setBounds(110, 350, 210, 30);
-        jPanel1.add(addressError);
-        addressError.setBounds(460, 80, 190, 30);
-        jPanel1.add(priceError);
-        priceError.setBounds(460, 160, 190, 30);
-        jPanel1.add(dateError);
-        dateError.setBounds(110, 260, 210, 30);
 
-        jLabel1.setText("id");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(20, 30, 70, 50);
-
-        jLabel3.setText("name");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(20, 120, 60, 50);
-
-        jLabel4.setText("date");
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(20, 210, 70, 50);
-
-        jLabel5.setText("Meduim");
-        jPanel1.add(jLabel5);
-        jLabel5.setBounds(370, 290, 70, 60);
-
-        jLabel6.setText("contact");
-        jPanel1.add(jLabel6);
-        jLabel6.setBounds(20, 300, 70, 50);
-
-        jLabel7.setText("format");
-        jPanel1.add(jLabel7);
-        jLabel7.setBounds(20, 400, 80, 40);
-
-        jLabel8.setText("price");
-        jPanel1.add(jLabel8);
-        jLabel8.setBounds(360, 110, 80, 50);
-
-        jLabel9.setText("size");
-        jPanel1.add(jLabel9);
-        jLabel9.setBounds(370, 220, 80, 30);
-
-        jLabel10.setText("Address");
-        jPanel1.add(jLabel10);
-        jLabel10.setBounds(360, 30, 90, 50);
-
-        mnaadmin.add(jPanel1);
-        jPanel1.setBounds(20, 0, 770, 550);
-
-        mnUpdateButton.setText("Update");
-        mnUpdateButton.addActionListener(new java.awt.event.ActionListener() {
+        mnPricetxt.setBorder(null);
+        mnPricetxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnUpdateButtonActionPerformed(evt);
+                mnPricetxtActionPerformed(evt);
             }
         });
-        mnaadmin.add(mnUpdateButton);
-        mnUpdateButton.setBounds(780, 40, 140, 55);
 
-        mnDeleteButton.setText("delete");
-        mnDeleteButton.addActionListener(new java.awt.event.ActionListener() {
+        mnSizetxt.setBorder(null);
+        mnSizetxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnDeleteButtonActionPerformed(evt);
+                mnSizetxtActionPerformed(evt);
             }
         });
-        mnaadmin.add(mnDeleteButton);
-        mnDeleteButton.setBounds(780, 140, 140, 50);
 
-        mnAddButton.setText("Add");
-        mnAddButton.addActionListener(new java.awt.event.ActionListener() {
+        mnMeduimtxt.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acrylic", "Watercolor", "Oil", "Charcoal" }));
+        mnMeduimtxt.setToolTipText("");
+        mnMeduimtxt.setBorder(null);
+        mnMeduimtxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnAddButtonActionPerformed(evt);
+                mnMeduimtxtActionPerformed(evt);
             }
         });
-        mnaadmin.add(mnAddButton);
-        mnAddButton.setBounds(790, 220, 130, 50);
 
         clear.setText("clear");
         clear.addActionListener(new java.awt.event.ActionListener() {
@@ -427,10 +302,232 @@ public class AGM extends javax.swing.JFrame {
                 clearActionPerformed(evt);
             }
         });
-        mnaadmin.add(clear);
-        clear.setBounds(800, 320, 130, 50);
 
-        jTabbedPane2.addTab("admin", mnaadmin);
+        mnAddButton.setText("Add");
+        mnAddButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnAddButtonActionPerformed(evt);
+            }
+        });
+
+        mnIDtxt.setBorder(null);
+        mnIDtxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnIDtxtActionPerformed(evt);
+            }
+        });
+
+        mnDeleteButton.setText("delete");
+        mnDeleteButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnDeleteButtonActionPerformed(evt);
+            }
+        });
+
+        mnUpdateButton.setText("Update");
+        mnUpdateButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnUpdateButtonActionPerformed(evt);
+            }
+        });
+
+        mnContacttxt.setText("98");
+        mnContacttxt.setBorder(null);
+        mnContacttxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnContacttxtActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("ID");
+
+        jLabel3.setText("Price");
+
+        jLabel4.setText("Contact");
+
+        jLabel5.setText("type");
+
+        jLabel6.setText("Date");
+
+        jLabel7.setText("Address");
+
+        jLabel8.setText("Size");
+
+        jLabel9.setText("Meduim");
+
+        jLabel10.setText("Name");
+
+        javax.swing.GroupLayout mnGalleryLayout = new javax.swing.GroupLayout(mnGallery);
+        mnGallery.setLayout(mnGalleryLayout);
+        mnGalleryLayout.setHorizontalGroup(
+            mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mnGalleryLayout.createSequentialGroup()
+                .addGap(13, 13, 13)
+                .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(mnGalleryLayout.createSequentialGroup()
+                            .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(mnGalleryLayout.createSequentialGroup()
+                                    .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(mnGalleryLayout.createSequentialGroup()
+                                            .addGap(25, 25, 25)
+                                            .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jLabel9)
+                                                    .addComponent(idError, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jLabel5)
+                                                    .addComponent(mnFormattxt, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                        .addGroup(mnGalleryLayout.createSequentialGroup()
+                                            .addGap(18, 18, 18)
+                                            .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(mnIDtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jLabel1)
+                                                .addComponent(mnMeduimtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(mnGalleryLayout.createSequentialGroup()
+                                            .addGap(1, 1, 1)
+                                            .addComponent(mnNametxt, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(mnGalleryLayout.createSequentialGroup()
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(mnSizetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(nameError, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jLabel8)
+                                                .addComponent(sizeError, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGroup(mnGalleryLayout.createSequentialGroup()
+                                    .addGap(220, 220, 220)
+                                    .addComponent(jLabel10)))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, mnGalleryLayout.createSequentialGroup()
+                                    .addGap(303, 303, 303)
+                                    .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(dateError, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(mnDatetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel6)
+                                        .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(contactError, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addGroup(mnGalleryLayout.createSequentialGroup()
+                                                .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jLabel4)
+                                                    .addComponent(mnContacttxt, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGap(0, 0, Short.MAX_VALUE))))
+                                    .addGap(301, 301, 301))
+                                .addGroup(mnGalleryLayout.createSequentialGroup()
+                                    .addComponent(clear, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(mnAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(351, 351, 351))))
+                        .addGroup(mnGalleryLayout.createSequentialGroup()
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 891, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(281, 281, 281)))
+                    .addGroup(mnGalleryLayout.createSequentialGroup()
+                        .addComponent(mnUpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(mnDeleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(669, 669, 669))))
+            .addGroup(mnGalleryLayout.createSequentialGroup()
+                .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(mnGalleryLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(priceError, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, mnGalleryLayout.createSequentialGroup()
+                        .addGap(491, 491, 491)
+                        .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7)
+                            .addComponent(mnPricetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3)
+                            .addComponent(mnStudioAddresstxt, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(addressError, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        mnGalleryLayout.setVerticalGroup(
+            mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mnGalleryLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(mnGalleryLayout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(mnContacttxt, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(mnPricetxt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(mnGalleryLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(idError, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(mnGalleryLayout.createSequentialGroup()
+                                .addGap(2, 2, 2)
+                                .addComponent(priceError, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(mnGalleryLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(contactError, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(mnGalleryLayout.createSequentialGroup()
+                        .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel10)
+                            .addComponent(jLabel3))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(mnIDtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(mnNametxt, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(nameError, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(mnGalleryLayout.createSequentialGroup()
+                        .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(mnGalleryLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel9)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                            .addGroup(mnGalleryLayout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(jLabel8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(mnMeduimtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(mnSizetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(mnGalleryLayout.createSequentialGroup()
+                                .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(dateError, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel5))
+                                .addGap(1, 1, 1))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mnGalleryLayout.createSequentialGroup()
+                                .addComponent(sizeError, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))))
+                    .addGroup(mnGalleryLayout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(mnGalleryLayout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(mnDatetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(mnStudioAddresstxt, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mnGalleryLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(addressError, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))))
+                .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(mnFormattxt, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(clear, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(mnAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(mnGalleryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(mnDeleteButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
+                        .addComponent(mnUpdateButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGap(186, 186, 186))
+        );
+
+        jTabbedPane2.addTab("items list", mnGallery);
 
         mnHome.setBackground(new java.awt.Color(239, 239, 235));
         mnHome.setMaximumSize(new java.awt.Dimension(1000, 500));
@@ -439,22 +536,6 @@ public class AGM extends javax.swing.JFrame {
         mnHome.setLayout(null);
         mnHome.add(jScrollPane4);
         jScrollPane4.setBounds(980, 0, 20, 340);
-
-        mnHimg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/agm/resources/image.png"))); // NOI18N
-        mnHimg.setText("jLabel13");
-        mnHome.add(mnHimg);
-        mnHimg.setBounds(0, 0, 1047, 180);
-
-        jLabel14.setFont(new java.awt.Font("Sitka Banner", 0, 48)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(54, 54, 51));
-        jLabel14.setText("Welcome");
-        mnHome.add(jLabel14);
-        jLabel14.setBounds(30, 160, 870, 120);
-
-        jLabel2.setFont(new java.awt.Font("Sitka Display", 1, 18)); // NOI18N
-        jLabel2.setText("Curate with Curator's Best Friend!");
-        mnHome.add(jLabel2);
-        jLabel2.setBounds(40, 330, 790, 40);
 
         mnLogoutButton.setBackground(new java.awt.Color(255, 0, 0));
         mnLogoutButton.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -466,33 +547,30 @@ public class AGM extends javax.swing.JFrame {
             }
         });
         mnHome.add(mnLogoutButton);
-        mnLogoutButton.setBounds(770, 200, 118, 30);
+        mnLogoutButton.setBounds(860, 520, 118, 30);
 
-        jLabel11.setFont(new java.awt.Font("DialogInput", 0, 30)); // NOI18N
-        jLabel11.setText("With functions like add update and delete,");
-        mnHome.add(jLabel11);
-        jLabel11.setBounds(20, 460, 940, 30);
-
-        jLabel18.setFont(new java.awt.Font("DialogInput", 0, 30)); // NOI18N
-        jLabel18.setText("art works effectively and efficiently.  ");
-        mnHome.add(jLabel18);
-        jLabel18.setBounds(20, 430, 940, 30);
-
-        jLabel19.setFont(new java.awt.Font("DialogInput", 0, 30)); // NOI18N
-        jLabel19.setText("This admin Panel is designed to help or manage the");
-        mnHome.add(jLabel19);
-        jLabel19.setBounds(20, 390, 940, 40);
-
-        jLabel20.setFont(new java.awt.Font("DialogInput", 0, 30)); // NOI18N
-        jLabel20.setText("you can easily manage the paintings with ease.");
-        mnHome.add(jLabel20);
-        jLabel20.setBounds(30, 490, 940, 30);
-
+        jLabel15.setBackground(new java.awt.Color(255, 246, 246));
         jLabel15.setFont(new java.awt.Font("Sitka Banner", 0, 48)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(54, 54, 51));
-        jLabel15.setText("Mandala Art Point Admin Panel");
+        jLabel15.setForeground(new java.awt.Color(255, 246, 246));
+        jLabel15.setText("Welcome");
         mnHome.add(jLabel15);
-        jLabel15.setBounds(30, 200, 870, 120);
+        jLabel15.setBounds(700, 240, 180, 70);
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/agm/resources/txt.png"))); // NOI18N
+        mnHome.add(jLabel12);
+        jLabel12.setBounds(20, 380, 818, 130);
+
+        jLabel16.setBackground(new java.awt.Color(255, 246, 246));
+        jLabel16.setFont(new java.awt.Font("Sitka Banner", 0, 48)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 246, 246));
+        jLabel16.setText("Maldala Art Point Admin Panel");
+        mnHome.add(jLabel16);
+        jLabel16.setBounds(360, 290, 870, 70);
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/agm/resources/image (1).png"))); // NOI18N
+        jLabel13.setText("jLabel13");
+        mnHome.add(jLabel13);
+        jLabel13.setBounds(0, 0, 990, 340);
 
         jTabbedPane2.addTab("home", mnHome);
 
@@ -904,6 +982,10 @@ public class AGM extends javax.swing.JFrame {
     private void mnStudioAddresstxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnStudioAddresstxtActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_mnStudioAddresstxtActionPerformed
+
+    private void mnMeduimtxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnMeduimtxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnMeduimtxtActionPerformed
     
     private void resetFormFields() {
     // Reset the form fields after successful update
@@ -963,13 +1045,10 @@ public class AGM extends javax.swing.JFrame {
     private javax.swing.JLabel imgLS;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -999,7 +1078,6 @@ public class AGM extends javax.swing.JFrame {
     private javax.swing.JButton mnDeleteButton;
     private javax.swing.JComboBox<String> mnFormattxt;
     private javax.swing.JPanel mnGallery;
-    private javax.swing.JLabel mnHimg;
     private javax.swing.JPanel mnHome;
     private javax.swing.JTextField mnIDtxt;
     private javax.swing.JButton mnLogoutButton;
