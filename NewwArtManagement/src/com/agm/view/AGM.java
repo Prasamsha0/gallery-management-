@@ -15,6 +15,7 @@ import javax.swing.table.DefaultTableModel;
 import com.agm.controller.algorithms.sort;
 import com.agm.controller.algorithms.insertionSort;
 import com.agm.controller.algorithms.mergeSort;
+import java.util.ArrayList;
 
 /**
  *
@@ -878,6 +879,8 @@ public class AGM extends javax.swing.JFrame {
         loadScreen("LoadingScreen");
     }
     
+
+    
     //makes the scroll bar load
     private void startProgress() {
         javax.swing.SwingWorker<Void, Integer> worker = new javax.swing.SwingWorker<>() {
@@ -1239,7 +1242,17 @@ public class AGM extends javax.swing.JFrame {
         List<paintingInfo> sortedList = selectionSort.sortById(artItemList, false);
         addArtwork(sortedList);
     }//GEN-LAST:event_mnSortIdButtonActionPerformed
-
+    
+    private void updateTable(List<paintingInfo> sortedList) {
+    DefaultTableModel model = (DefaultTableModel) mntable.getModel();
+    model.setRowCount(0); // Clear the table
+    for (paintingInfo art : sortedList) {
+        model.addRow(new Object[]{art.getArtId(), art.getName(), art.getDate(), art.getMedium(), art.getContact(), art.getPrice(),art.getAddress(),   art.getFormatt()
+           ,art.getSize()});
+    }
+    }
+    
+    
     private void mnSortButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnSortButtonActionPerformed
         // TODO add your handling code here:
             // Get the selected option from the ComboBox (assuming it's called sortComboBox)
